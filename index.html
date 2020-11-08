@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Judgment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Pre-Judgment Calculator USD</h1>
+        <form method="post">
+            <fieldset>
+                <label class="startDateLabel label">Start Date :
+                    <input class="inputBox" type="date" name="startDateInput" id="startDateInput">
+                </label>
+                <label class="endDateLabel label">End Date :
+                    <input class="inputBox" type="date" name="endDateInput" id="endDateInput">
+                </label>
+                <label class="judgment label">Judgement :
+                    <input class="inputBox" type="number" name="judgmentAmountInput" id="judgmentAmountInput">
+                </label>
+                <label class="percentage label">Percentage :
+                    <input class="inputBox" type="number" name="percentageInput" id="percentageInput">
+                </label>
+                <button type="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+
+        <div class="amounts">
+            <div class="showAmount">Start Date : <span id="startDateOutput"></span></div>
+            <div class="showAmount">End Date : <span id="endDateOutput"></span></div>
+            <div class="showAmount">Total Days : <span id="totalDaysOutput"></span></div>
+            <!-- <div class="showAmount">Judgment : <span id="judgmentAmountOutput"></span></div> -->
+            <div class="showAmount">Interest Per Day : <span id="perDayAmountOutput"></span></div>
+            <div class="showAmount">Total : <span id="totalOutput"></span></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
